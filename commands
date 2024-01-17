@@ -1,0 +1,21 @@
+# run tests
+pytest
+
+# run tests with HTML report
+pytest --html=report.html
+
+# run tests with coverage report
+coverage run -m pytest tests
+coverage html
+
+
+# run specific test
+pytest tests/main_test.py::test_complex_data_types_1
+
+# run tests with specific marks
+pytest -k my_own_mark
+
+# run tests in parallel
+pytest-xdist plugin
+
+# great_expectations
